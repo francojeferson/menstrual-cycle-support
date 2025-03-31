@@ -1,0 +1,33 @@
+.calendar {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.days > div {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cycleDay {
+  background-color: #f8d7da;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
